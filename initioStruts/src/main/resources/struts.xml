@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="struts2" extends="struts-default">
+        <!-- el "action" es un path para index.html-->
+        <!-- el "action" recibe el full qualified name para la clase que hace la lógica-->
+        <!-- ese action tiene un/os "<result>" coincide con retorno?
+             entonces ir con lo que dé ese entorno al path/jsp señalado-->
+        <action name="saludar" class="com.mycompany.initio.beans.InitioAction">
+            <result name="EXITO">/saludador.jsp</result>
+        </action>
+    </package>
+</struts>
